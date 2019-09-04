@@ -276,7 +276,7 @@ class admin_model extends CI_Model {
 		else {
 			$kode="00001";
 		}
-		return "AMX".$kode;
+		return "as".$kode;
 	}
 
 	function DeleteProduk($id_produk) {

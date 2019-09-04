@@ -83,7 +83,7 @@
 							}
 
 							?>
-							<a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/logo/<?php echo $logo;?>" alt="Adriano MX Online Shop" /></a>
+							<a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/logo/<?php echo $logo;?>" alt="toko_antik" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							
@@ -190,7 +190,7 @@
 	    			<div class="contact-info">
 	    				<h2 class="title text-center">Kontak Kami</h2>
 	    				<address>
-	    					<p>Adriano MX-Shop</p>
+	    					<p>Toko - Shop</p>
 							<p><?php echo $alamat;?></p>
 							<p>Mobile: <?php echo $phone;?></p>
 							<p>Email: <?php echo $email;?></p>
@@ -222,7 +222,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>Adriano MX</span>-Shop</h2>
+							<h2><span>Toko_Antik</span>-Shop</h2>
 							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p> -->
 						</div>
 					</div>
@@ -264,7 +264,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2014 Adriano MX Online Shop. All rights reserved.</p>
+					<p class="pull-left"><strong>Copyright &copy; 2019 <a href="https://choi.my.id">Choco-Studio</a>.</strong> All rights reserved. </p
 					
 				</div>
 			</div>

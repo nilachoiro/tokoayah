@@ -373,7 +373,7 @@ CREATE TABLE `tbl_seo` (
 --
 
 INSERT INTO `tbl_seo` (`id_seo`, `tittle`, `keyword`, `description`) VALUES
-(1, 'Adriano MX Online Shop', 'Adriano Shop, Shop Mx', 'Adriano shop adalah website resmi toko online shop');
+(1, 'toko_antik', 'Adriano Shop, Shop Mx', 'Adriano shop adalah website resmi toko online shop');
 
 -- --------------------------------------------------------
 
@@ -435,7 +435,7 @@ CREATE TABLE `tbl_tentangkami` (
 --
 
 INSERT INTO `tbl_tentangkami` (`id_tentangkami`, `judul`, `deskripsi`) VALUES
-(1, 'Kami Hadir Untuk Anda | Adriano MX Online Shop', 'Adriano mx shop adalah toko yang menyediakan segala perlengkapan motocross dari anak-anak sampai dewasa. kami juga bisa menerima pesanan jersey sesuai dengan keinginan user.<br>Salam Owner<br>Adriano<br><br>" ');
+(1, 'Kami Hadir Untuk Anda | toko_antik', 'Toko_Antik shop adalah toko yang menyediakan segala perlengkapan motocross dari anak-anak sampai dewasa. kami juga bisa menerima pesanan jersey sesuai dengan keinginan user.<br>Salam Owner<br>Adriano<br><br>" ');
 
 -- --------------------------------------------------------
 

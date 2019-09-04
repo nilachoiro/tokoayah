@@ -421,14 +421,14 @@ $isi_psn = '<tr><td>'.$items["id"].'</td><td>'.$items["name"].'</td><td>Rp.'.$th
 ';
 					$isi_psn ='</table><br>';
 					$isi_psn ='Harga di atas belum termasuk biaya kirim. Kami akan mengirimkan total yang harus anda bayar ke email anda dalam jangka waktu 1x24 jam.<br>';
-					$isi_psn ='Salam, Adriano MX Online Shop';
+					$isi_psn ='Salam, toko_antik';
 
 
 					$this->load->library('email');
 					$this->email->set_mailtype('html');
-					$this->email->from("adrianomxshoponlin@gmail.com", "Admin Adriano MX Online Shop");
+					$this->email->from("toko_antik@gmail.com", "Admin toko_antik");
 					$this->email->to($email);
-					$this->email->subject('Detail Pesanan/Belanja Adriano MX Online Shop');
+					$this->email->subject('Detail Pesanan/Belanja toko_antik');
 					$this->email->message($isi_psn);
 					$this->email->send();
 

@@ -185,8 +185,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '3000';
-					$config['max_height']  	= '3000';
+					// $config['max_width']  	= '3000';
+					// $config['max_height']  	= '3000';
 					
 			 
 					$this->load->library('upload', $config);
@@ -316,8 +316,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '3000';
-					$config['max_height']  	= '3000';
+					// $config['max_width']  	= '3000';
+					// $config['max_height']  	= '3000';
 					
 			 
 					$this->load->library('upload', $config);
@@ -422,8 +422,6 @@ class adminweb extends CI_Controller {
 
 				if(empty($_FILES['userfile']['name']))
 				{
-					
-					
 					$this->session->set_flashdata('message','Logo Berhasil Diupdate');
 					redirect("adminweb/logo");
 				}
@@ -434,8 +432,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '500';
-					$config['max_height']  	= '250';
+					// $config['max_width']  	= '500';
+					// $config['max_height']  	= '250';
 			 
 					$this->load->library('upload', $config);
 	 
@@ -789,8 +787,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '3000';
-					$config['max_height']  	= '3000';
+					// $config['max_width']  	= '3000';
+					// $config['max_height']  	= '3000';
 					
 			 
 					$this->load->library('upload', $config);
@@ -922,8 +920,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '260';
-					$config['max_height']  	= '100';
+					// $config['max_width']  	= '260';
+					// $config['max_height']  	= '100';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1234,8 +1232,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '150';
-					$config['max_height']  	= '60';
+					// $config['max_width']  	= '150';
+					// $config['max_height']  	= '60';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1362,8 +1360,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '150';
-					$config['max_height']  	= '60';
+					// $config['max_width']  	= '150';
+					// $config['max_height']  	= '60';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1503,8 +1501,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '268';
-					$config['max_height']  	= '249';
+					// $config['max_width']  	= '268';
+					// $config['max_height']  	= '249';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1514,6 +1512,7 @@ class adminweb extends CI_Controller {
 			 
 						/* PATH */
 						$source             = "./images/produk/".$data['file_name'] ;
+						$ukuranubah         = "./images/produk/asli" ;
 						$destination_thumb	= "./images/produk/thumb/" ;
 						$destination_medium	= "./images/produk/medium/" ;
 						// Permission Configuration
@@ -1567,7 +1566,7 @@ class adminweb extends CI_Controller {
 						$this->image_lib->initialize($img);
 						$this->image_lib->resize();
 						$this->image_lib->clear() ;
-						
+
 						$in_data['kode_produk'] = $this->input->post('kode_produk');
 						$in_data['nama_produk'] = $this->input->post('nama_produk');
 						$in_data['harga'] = $this->input->post('harga');
@@ -1580,10 +1579,6 @@ class adminweb extends CI_Controller {
 						
 						
 						$this->db->insert("tbl_produk",$in_data);
-
-						
-
-				
 						
 						$this->session->set_flashdata('berhasil','Produk Berhasil Disimpan');
 						redirect("adminweb/produk");
@@ -1653,8 +1648,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '268';
-					$config['max_height']  	= '249';
+					// $config['max_width']  	= '268';
+					// $config['max_height']  	= '249';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1788,8 +1783,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '484';
-					$config['max_height']  	= '441';
+					// $config['max_width']  	= '484';
+					// $config['max_height']  	= '441';
 					
 			 
 					$this->load->library('upload', $config);
@@ -1927,8 +1922,8 @@ class adminweb extends CI_Controller {
 					$config['encrypt_name']	= TRUE;
 					$config['remove_spaces']	= TRUE;	
 					$config['max_size']     = '3000';
-					$config['max_width']  	= '481';
-					$config['max_height']  	= '441';
+					// $config['max_width']  	= '481';
+					// $config['max_height']  	= '441';
 					
 			 
 					$this->load->library('upload', $config);
@@ -2089,7 +2084,7 @@ class adminweb extends CI_Controller {
 		$this->admin_model->SimpanBukuTamuAdd($email,$judul,$isi_hubungi_kami_kirim);
 
 		$this->load->library('email');
-		$this->email->from('info@adriano.com', 'Adriano MX Online Shop');
+		$this->email->from('info@toko_antik.com', 'toko_antik');
 		$this->email->to($email); 	
 		$this->email->subject($judul);
 		$this->email->message($isi_hubungi_kami_kirim);	
@@ -2115,7 +2110,7 @@ class adminweb extends CI_Controller {
 		$this->admin_model->SimpanBukuTamuAdd($email,$judul,$isi_hubungi_kami_kirim);
 
 		$this->load->library('email');
-		$this->email->from('info@adriano.com', 'Adriano MX Online Shop');
+		$this->email->from('info@toko_antik.com', 'toko_antik');
 		$this->email->to($email); 	
 		$this->email->subject($judul);
 		$this->email->message($isi_hubungi_kami_kirim);	
